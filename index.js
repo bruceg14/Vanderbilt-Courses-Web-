@@ -1,11 +1,11 @@
 const express = require('express');
 const courseRouter = require('./routes/courses');
-const mongoose = require('mongoose');
+
 const theCourses = require('./models/course');
 const app = express();
 
-
-mongoose.connect('mongodb://127.0.0.1/VandyCourses');
+const mongoose = require('mongoose');
+// mongoose.connect('mongodb://localhost/VandyCourses');
 
 app.use(express.urlencoded({extended: false}));
 

@@ -3,17 +3,16 @@ const courseRouter = require('./routes/courses');
 
 const theCourses = require('./models/course');
 const app = express();
-
-const mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost/VandyCourses');
-
 app.use(express.urlencoded({extended: false}));
-
-
 app.set("view engine", "ejs");
 
 
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://user1/VanderbiltCourses');
+
+
 app.get('/', (req, res) => {
+    //These are two courses to demonstrate the website. Input the database as a loop here when the connection is fixed.
     const courses = [{
         major: "CS",
         number: "1101",

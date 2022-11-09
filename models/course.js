@@ -16,14 +16,6 @@ const courseSchema = new mongoose.Schema({
     Description:{
         type: String
     }
-    // Upvote:{
-    //     type: Number,
-    //     default: 0
-    // },
-    // Downvote:{
-    //     type: Number,
-    //     default: 0
-    // }
 
 })
 

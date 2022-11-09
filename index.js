@@ -8,7 +8,7 @@ app.set("view engine", "ejs");
 
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://user1/VanderbiltCourses');
+mongoose.connect('mongodb+srv://G1:Bruceguo1234@atlascluster.pm6jtw8.mongodb.net/?retryWrites=true&w=majority');
 
 
 app.get('/', (req, res) => {

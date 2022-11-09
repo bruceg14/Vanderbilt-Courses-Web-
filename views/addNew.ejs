@@ -16,18 +16,18 @@
         <form action = "/Courses" method = "POST">
             <div class="input-group mt-4">
                 <span class="input-group-text">Major and Course Number</span>
-                <input type="text" aria-label="Major" class="form-control">
-                <input required type="number" aria-label="CourseNumber" class="form-control">
+                <input required type="text" name="Major" class="form-control">
+                <input required type="number" name="CourseNumber" class="form-control">
               </div>
     
               <div class="input-group input-group-lg mt-4">
                 <span class="input-group-text" id="inputGroup-sizing-lg">Course Name</span>
-                <input required type="text" class="form-control" aria-label="CourseName" aria-describedby="inputGroup-sizing-lg">
+                <input required type="text" class="form-control" name="CourseName" aria-describedby="inputGroup-sizing-lg">
               </div>
     
               <div class="input-group mt-4 mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Descriptions</span>
-                <input required type="text" class="form-control" aria-label="Descriptions" aria-describedby="inputGroup-sizing-default">
+                <input required type="text" class="form-control" name="Descriptions" aria-describedby="inputGroup-sizing-default">
               </div>
               <a href = '/' role = "button" class = "btn btn-dark me-4 ms-1">Cancel</a>
               <button type = "submit" class = "btn btn-primary">Submit</button>

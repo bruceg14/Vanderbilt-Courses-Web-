@@ -9,8 +9,7 @@ router.get('/addNew', (req, res) => {
 
 
 
-
-router.post('/', async (req, res) =>{
+router.post('/',  async(req, res) =>{
     let course = new theCourse({
         Major: req.body.Major,
         CourseNumber: req.body.CourseNumber,
@@ -20,9 +19,8 @@ router.post('/', async (req, res) =>{
     try{
         await course.save();
     } catch(e){
-        console.warn("Warning!");
+        console.warn(e);
     }
-
 })
 
 

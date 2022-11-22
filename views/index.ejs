@@ -11,23 +11,25 @@
 </head>
 <body>
     <div>
-        <h1 class = "mt-4 mb-4">Vanderbilt Courses</h1>
-        <a href = "/courses/addNew" role="button" class="btn btn-outline-primary">Add New Courses</a>
+        <h1 class = "mb-4">Computer Science Courses in Vanderbilt</h1>
+        <a href = "/addNew" role = "button" class = "btn btn-primary mb-4">Add New Course</a>
+        <div>
+            <% courses.forEach(course => { %>
+                <div class="card mb-4">
+                    <div class="card-header">
+                      <%= course.major %> <%= course.courseNumber %>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title"> <%= course.courseName %> </h5>
+                      <p class="card-text"> <%= course.description %> </p>
+                      <a href="/addNew" class="btn btn-primary">edit</a>
 
-        <% courses.forEach(course =>{ %>
-            <div class="card mt-3">
-                <div class="card-header">
-                <%= course.major %> <%= course.number %>
-                </div>
-                <div class="card-body">
-                <h5 class="card-title"><%= course.CourseName %></h5>
-                <p class="card-text"><%= course.Descriptions %></p>
-                <a href= "/courses/rate" role="button" class="btn btn-success">Upvote!</a>
-                <a href= "/courses/rate" role="button" class="btn btn-danger">Downvote!</a>
-                </div>
-            </div>
-        <% }) %>
+                    </div>
+                  </div>
+            <% }) %>
+        </div>
+       
+        
     </div>
-
 </body>
 </html>

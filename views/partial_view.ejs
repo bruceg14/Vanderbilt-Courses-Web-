@@ -1,0 +1,23 @@
+<div class = "form-group">
+    <label for = "major" >Major </label>
+    <input requried value = "<%= course.major %>" type = "text" name = "major" id = "major">
+</div>
+
+<div class = "form-group" >
+    <label for = "courseNumber" class = "mt-4" >Course Number </label>
+    <input required value = "<%= course.value %>" type = "text" name = "courseNumber" id = "courseNumber">
+</div>
+
+<div class = "form-group">
+    <label for = "courseName" class = "mt-4">Course Name</label>
+    <input required value = "<%= course.courseName %>" type = "text" name = "courseName" id = "courseName">
+</div>
+
+<div class = "form-group" >
+    <label for = "description" class = "mt-4">Course Description</label>
+    <input required value = "<%= course.description %>" type = "text" name = "description" id = "description">
+</div>
+
+
+<a href = '/' role = "button" class = "btn btn-dark mt-4 me-4 ms-1">Cancel</a>
+<button type = "submit" class = "btn btn-primary mt-4">Submit New Course</button>

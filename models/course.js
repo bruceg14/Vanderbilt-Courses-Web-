@@ -1,22 +1,23 @@
 const mongoose = require('mongoose');
 
 const courseSchema = new mongoose.Schema({
-    Major:{
+    major:{
         type: String,
-        required: true
-    }, 
-    CourseNumber:{
-        type: Number,
-        required: true
+        Required: true
     },
-    CourseName:{
-        type:String,
+    courseNumber:{
+        type: String,
         Required: true
     }, 
-    Description:{
-        type: String
+    courseName:{
+        type: String,
+        Required:true
+    }, 
+    description:{
+        type: String,
+        Required: false
     }
 
 })
 
-module.exports = mongoose.model('courses', courseSchema);
+module.exports = mongoose.model('Course', courseSchema);
